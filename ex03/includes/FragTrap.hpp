@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 21:35:59 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 23:12:24 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:04:46 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,11 @@ public:
 	virtual ~FragTrap( void );
 
 	void highFivesGuys(void);
+
+protected:
+	static unsigned int DefaultHitPoints_;
+	static unsigned int DefaultEnergyPoints_;
+	static unsigned int DefaultAttackDamage_;
 
 };
 

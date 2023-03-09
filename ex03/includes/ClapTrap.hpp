@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:58:06 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 22:26:58 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 19:59:04 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ protected:
 	unsigned int	HitPoints_;
 	unsigned int	EnergyPoints_;
 	unsigned int	AttackDamage_;
+
+	static unsigned int DefaultHitPoints_;
+	static unsigned int DefaultEnergyPoints_;
+	static unsigned int DefaultAttackDamage_;
 
 	static unsigned int HitPointsMax_;
 	static unsigned int AttackDamageMax_;

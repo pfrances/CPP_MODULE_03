@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:57:59 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 22:33:10 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:00:39 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,21 @@
 unsigned int ClapTrap::HitPointsMax_ = 100;
 unsigned int ClapTrap::AttackDamageMax_ = 100;
 
+unsigned int ClapTrap::DefaultHitPoints_ = 10;
+unsigned int ClapTrap::DefaultEnergyPoints_ = 10;
+unsigned int ClapTrap::DefaultAttackDamage_ = 0;
+
 ClapTrap::ClapTrap( void ) : Name_("Unamed"),
-							HitPoints_(10),
-							EnergyPoints_(10),
-							AttackDamage_(0) {
+							HitPoints_(DefaultHitPoints_),
+							EnergyPoints_(DefaultEnergyPoints_),
+							AttackDamage_(DefaultAttackDamage_) {
 	std::cout << "[ClapTrap] default constructor called. Welcome " << this->Name_ << std::endl;
 }
 
 ClapTrap::ClapTrap( std::string name ) : Name_(name),
-							HitPoints_(10),
-							EnergyPoints_(10),
-							AttackDamage_(0) {
+							HitPoints_(DefaultHitPoints_),
+							EnergyPoints_(DefaultEnergyPoints_),
+							AttackDamage_(DefaultAttackDamage_) {
 	std::cout << "[ClapTrap] named constructor called. Welcome " << this->Name_ << std::endl;
 }
 

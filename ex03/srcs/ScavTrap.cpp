@@ -6,25 +6,29 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:57:59 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 21:43:56 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:04:08 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
+unsigned int ScavTrap::DefaultHitPoints_ = 100;
+unsigned int ScavTrap::DefaultEnergyPoints_ = 50;
+unsigned int ScavTrap::DefaultAttackDamage_ = 20;
+
 ScavTrap::ScavTrap( void ) : ClapTrap(), gateKeeper_(false) {
 	this->Name_ = "Unamed";
-	this->HitPoints_ = 100;
-	this->EnergyPoints_ = 50;
-	this->AttackDamage_ = 20;
+	this->HitPoints_ = DefaultHitPoints_;
+	this->EnergyPoints_ = DefaultEnergyPoints_;
+	this->AttackDamage_ = DefaultAttackDamage_;
 	std::cout << "[ScavTrap] default constructor called. Welcome " << this->Name_ << std::endl;
 }
 
 ScavTrap::ScavTrap( std::string name ) : ClapTrap(name), gateKeeper_(false) {
 	this->Name_ = name;
-	this->HitPoints_ = 100;
-	this->EnergyPoints_ = 50;
-	this->AttackDamage_ = 20;
+	this->HitPoints_ = DefaultHitPoints_;
+	this->EnergyPoints_ = DefaultEnergyPoints_;
+	this->AttackDamage_ = DefaultAttackDamage_;
 	std::cout << "[ScavTrap] named constructor called. Welcome " << this->Name_ << std::endl;
 }
 

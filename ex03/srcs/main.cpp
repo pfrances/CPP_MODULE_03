@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 21:38:04 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 22:42:05 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:08:25 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,14 @@ int main( void ) {
 	Scav1.takeDamage(Diam1.getAttackDamage());
 
 	std::cout << std::endl;
+	
 	Scav1.attack("Diam1");
 	Diam1.takeDamage(Scav1.getAttackDamage());
 	Diam1.beRepaired(5);
+
+	std::cout << std::endl;
+
+	Diam1.whoAmI();
 
 	std::cout << std::endl;
 

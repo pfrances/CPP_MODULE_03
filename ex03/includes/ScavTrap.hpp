@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:58:06 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 22:16:05 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/09 20:04:56 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ public:
 
 private:
 	bool	gateKeeper_;
+
+protected:
+	static unsigned int DefaultHitPoints_;
+	static unsigned int DefaultEnergyPoints_;
+	static unsigned int DefaultAttackDamage_;
 };
 
 #endif
