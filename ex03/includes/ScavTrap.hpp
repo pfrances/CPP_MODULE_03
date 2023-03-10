@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:58:06 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/09 20:04:56 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/10 15:38:08 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ public:
 	virtual ~ScavTrap( void );
 
 	void	guardGate( void );
+
+	virtual void attack(const std::string& target);
 
 private:
 	bool	gateKeeper_;

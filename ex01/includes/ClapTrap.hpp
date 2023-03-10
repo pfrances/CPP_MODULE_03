@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 21:58:06 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/08 21:25:15 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/10 15:33:46 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
 	ClapTrap& operator=(const ClapTrap& other);
 	virtual ~ClapTrap( void );
 
-	void	attack(const std::string& target);
+	virtual void	attack(const std::string& target);
 	void	takeDamage(unsigned int amount);
 	void	beRepaired(unsigned int amount);
 
@@ -36,6 +36,10 @@ protected:
 	unsigned int	HitPoints_;
 	unsigned int	EnergyPoints_;
 	unsigned int	AttackDamage_;
+
+	static unsigned int DefaultHitPoints_;
+	static unsigned int DefaultEnergyPoints_;
+	static unsigned int DefaultAttackDamage_;
 
 	static unsigned int HitPointsMax_;
 	static unsigned int AttackDamageMax_;

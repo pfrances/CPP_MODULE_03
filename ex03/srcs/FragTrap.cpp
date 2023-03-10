@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 21:37:14 by pfrances          #+#    #+#             */
-/*   Updated: 2023/03/09 20:17:48 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/03/10 15:43:29 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,14 @@ FragTrap::FragTrap( std::string name ) : ClapTrap(name) {
 }
 
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {
-	this->Name_ = other.Name_;
-	this->HitPoints_ = other.HitPoints_;
-	this->EnergyPoints_ = other.EnergyPoints_;
-	this->AttackDamage_ = other.AttackDamage_;
 	std::cout << "[FragTrap] copy constructor called. Welcome " << this->Name_ << std::endl;
 }
 
 FragTrap&	FragTrap::operator=(const FragTrap& other) {
 	if (this != &other) {
 		ClapTrap::operator=(other);
-		std::cout << "[FragTrap] asignment called. Welcome " << this->Name_ << std::endl;
 	}
+	std::cout << "[FragTrap] asignment called. Welcome " << this->Name_ << std::endl;
 	return *this;
 }
 
