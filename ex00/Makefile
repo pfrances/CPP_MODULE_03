@@ -6,11 +6,11 @@
 #    By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/26 11:07:21 by pfrances          #+#    #+#              #
-#    Updated: 2023/03/08 14:10:03 by pfrances         ###   ########.fr        #
+#    Updated: 2023/06/08 21:22:27 by pfrances         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = pgrm
+NAME = prgm
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -g -fsanitize=address -MMD -MP
 INCLUDE = -I includes
